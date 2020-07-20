@@ -1,4 +1,4 @@
-import Group from "./Group.js"
+import Group from "/Group.js"
 
 export default class Game {
 	constructor (props = {}) {

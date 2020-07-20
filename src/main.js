@@ -1,9 +1,9 @@
-import Game from './Game.js'
+import Game from '/Game.js'
 import { loadImage, loadJSON } from './Loader.js'
-import Sprite from './Sprite.js'
-import Cinematic from './Cinematic.js'
-import { haveCollision, getRandomFrom } from './Additional.js'
-import DisplayObject from './DisplayObject.js'
+import Sprite from '/Sprite.js'
+import Cinematic from '/Cinematic.js'
+import { haveCollision, getRandomFrom } from '/Additional.js'
+import DisplayObject from '/DisplayObject.js'
 
 const scale = 2
 const directions = ['left', 'right', 'up', 'down']
@@ -210,12 +210,10 @@ export	default async function main() {
 
 				setTimeout(() => {
 					ghosts.forEach(ghost => {
-						ghost.animations = ghost.originalAnimation
-						ghost.isBlue = false
-						ghost.start(ghost.animation.name)
-					})
-				}, 5000)
-				ghosts.forEach(changeDirection)
+					ghost.animations = ghost.originalAnimation
+					ghost.isBlue = false
+					ghost.start(ghost.animation.name)
+				})}, 5000)
 				break
 			}
 

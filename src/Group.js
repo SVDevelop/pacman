@@ -1,4 +1,4 @@
-import DisplayObject from './DisplayObject.js'
+import DisplayObject from '/DisplayObject.js'
 
 export default class Group extends DisplayObject {
 	constructor ( props = {} ){
