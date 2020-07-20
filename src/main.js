@@ -214,8 +214,8 @@ export	default async function main() {
 						ghost.isBlue = false
 						ghost.start(ghost.animation.name)
 					})
-				}, 5000)
-				ghosts.forEach(changeDirection)
+				}, 25000)
+
 				break
 			}
 
